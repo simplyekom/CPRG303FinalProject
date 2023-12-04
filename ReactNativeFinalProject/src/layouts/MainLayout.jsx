@@ -16,7 +16,8 @@ const MainLayout = ({ children }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20,
+    backgroundColor: '#FFD9EB', // Lighter pink background color
+    padding: 0,
   },
 });
 

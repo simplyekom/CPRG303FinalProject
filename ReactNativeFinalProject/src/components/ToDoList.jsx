@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import { StyleSheet, View, Text, ScrollView, Pressable } from 'react-native';
 
 const ToDoList = ({ tasks }) => {
@@ -44,4 +44,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ToDoList;
+export default ToDoList;*/
