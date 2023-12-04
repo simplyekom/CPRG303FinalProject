@@ -1,30 +1,47 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Image } from 'react-native';
 
 const Header = () => {
   return (
     <View style={styles.headerContainer}>
-      <Text style={styles.headerText}>🌸 Better Together 🌸</Text>
+      <View style={styles.logoContainer}>
+        <Image
+          source={require('../images/btlogo.png')}
+          style={styles.logo}
+          resizeMode="contain" // Adjust the resizeMode as needed
+        />
+      </View>
+      <Text style={styles.headerText}> Better Together </Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   headerContainer: {
-    backgroundColor: '#FFC0CB', // Pink color
+    backgroundColor: '#FFB6C1',
     padding: 20,
     alignItems: 'center',
-    borderBottomLeftRadius: 20,
-    borderBottomRightRadius: 20,
-    elevation: 3, // Add shadow for a subtle lift
+    borderBottomLeftRadius: 30,
+    borderBottomRightRadius: 30,
+    elevation: 3,
+    flexDirection: 'row', // Use flexDirection to arrange items horizontally
+  },
+  logoContainer: {
+    marginRight: 0, // Adjust spacing between logo and text
+  },
+  logo: {
+    marginLeft:20,
+    width: 80,
+    height: 60,
   },
   headerText: {
-    color: 'white', // White text color for contrast
+    color: 'black',
     fontSize: 24,
     fontWeight: 'bold',
-    textTransform: 'uppercase', // Uppercase text
+    textTransform: 'uppercase',
   },
 });
 
 export default Header;
+
 

@@ -4,14 +4,14 @@ import { View, Text, StyleSheet } from 'react-native';
 const Footer = () => {
   return (
     <View style={styles.footerContainer}>
-      <Text style={styles.footerText}>🌸 This is the Footer 🌸</Text>
+      <Text style={styles.footerText}>This is the Footer 🌸</Text>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   footerContainer: {
-    backgroundColor: '#FFC0CB', // Pink color
+    backgroundColor: '#FFB6C1', // Pink color
     padding: 15,
     alignItems: 'center',
     borderTopLeftRadius: 20,

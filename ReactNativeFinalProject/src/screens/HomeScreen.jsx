@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, View, Button, StyleSheet } from 'react-native';
+import { SafeAreaView, View, TouchableOpacity, Text, StyleSheet } from 'react-native';
 import MainLayout from '../layouts/MainLayout';
 
 const HomeScreen = ({ navigation }) => {
@@ -7,26 +7,30 @@ const HomeScreen = ({ navigation }) => {
     <MainLayout>
       <SafeAreaView style={styles.safeArea}>
         <View style={styles.viewhousehold}>
-          <Button
-            title="View Household"
+          <TouchableOpacity
+            style={styles.button}
             onPress={() => navigation.navigate('View Household')}
+          >
+            <Text style={styles.buttonText}>View Household</Text>
+          </TouchableOpacity>
+        </View>
 
-          />
-          </View>
-          
-          <View style={styles.createhousehold}>
-          <Button
-            title="Create Household"
+        <View style={styles.createhousehold}>
+          <TouchableOpacity
+            style={styles.button}
             onPress={() => navigation.navigate('Create Household')}
+          >
+            <Text style={styles.buttonText}>Create Household</Text>
+          </TouchableOpacity>
+        </View>
 
-          />
-          </View>
-          <View style = {styles.searchhousehold}>
-          <Button
-            title="Search Existing Household"
+        <View style={styles.searchhousehold}>
+          <TouchableOpacity
+            style={styles.button}
             onPress={() => navigation.navigate('Search Existing Household')}
-
-          />
+          >
+            <Text style={styles.buttonText}>Search Existing Household</Text>
+          </TouchableOpacity>
         </View>
       </SafeAreaView>
     </MainLayout>
@@ -34,30 +38,38 @@ const HomeScreen = ({ navigation }) => {
 };
 
 const styles = StyleSheet.create({
-    safeArea: {
-      flex: 1,
-    },
-    viewhousehold: {
-      marginTop: 170,
-      paddingLeft: 20,
-      paddingRight: 20,
-      marginBottom: 20,
-    },
-
-    createhousehold: {
-        marginTop: 20,
-        paddingLeft: 20,
-        paddingRight: 20,
-        marginBottom: 20,
-    },
-    searchhousehold: {
-        marginTop: 20,
-        paddingLeft: 20,
-        paddingRight: 20,
-        marginBottom: 20,
-    },
-  });
-  
-
+  safeArea: {
+    flex: 1,
+  },
+  viewhousehold: {
+    marginTop: 170,
+    paddingLeft: 20,
+    paddingRight: 20,
+    marginBottom: 20,
+  },
+  createhousehold: {
+    marginTop: 20,
+    paddingLeft: 20,
+    paddingRight: 20,
+    marginBottom: 20,
+  },
+  searchhousehold: {
+    marginTop: 20,
+    paddingLeft: 20,
+    paddingRight: 20,
+    marginBottom: 20,
+  },
+  button: {
+    backgroundColor: 'white', // White background color
+    borderWidth: 1, // Black border
+    borderColor: 'black', // Black border color
+    padding: 15,
+    borderRadius: 5,
+  },
+  buttonText: {
+    color: 'black', // Black text color
+    textAlign: 'center',
+  },
+});
 
 export default HomeScreen;
