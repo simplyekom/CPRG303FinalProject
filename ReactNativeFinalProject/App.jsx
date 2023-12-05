@@ -24,7 +24,7 @@ const App = () => {
       <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="View Household" component={ViewHouseholdScreen} />
-        <Stack.Screen name="Create Household" component={ViewHouseholdScreen} />
+        <Stack.Screen name="Create Household" component={CreateHouseholdScreen} />
         <Stack.Screen name="Search Existing Household" component={SearchHouseholdScreen} />
       </Stack.Navigator>
     </NavigationContainer>
