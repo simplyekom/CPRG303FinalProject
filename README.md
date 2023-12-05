@@ -1,6 +1,4 @@
-# CPRG303FinalProject
-
-# Better Together Mobile App
+# CPRG303FinalProject - Better Together Mobile App
 
 # Overview
 
