@@ -69,10 +69,10 @@ const styles = StyleSheet.create({
   categoryContainer: {
     margin: 20,
     alignItems: 'center',
-    backgroundColor: '#FFC0CB', // Pink color
+    backgroundColor: '#FFC0CB', 
     padding: 20,
     borderRadius: 20,
-    elevation: 3, // Add shadow for a subtle lift
+    elevation: 3,
     marginBottom: 20,
   },
   categoryHeader: {
@@ -89,10 +89,10 @@ const styles = StyleSheet.create({
   verticalCategoryContainer: {
     flex: 1,
     margin: 20,
-    backgroundColor: '#FFC0CB', // Pink color
+    backgroundColor: '#FFC0CB',
     padding: 20,
     borderRadius: 20,
-    elevation: 3, // Add shadow for a subtle lift
+    elevation: 3, 
     marginBottom: 20,
   },
   text: {

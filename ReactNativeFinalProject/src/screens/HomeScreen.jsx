@@ -60,14 +60,14 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   button: {
-    backgroundColor: 'white', // White background color
-    borderWidth: 1, // Black border
-    borderColor: 'black', // Black border color
+    backgroundColor: 'white', 
+    borderWidth: 1, 
+    borderColor: 'black', 
     padding: 15,
     borderRadius: 5,
   },
   buttonText: {
-    color: 'black', // Black text color
+    color: 'black', 
     textAlign: 'center',
   },
 });

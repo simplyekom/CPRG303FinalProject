@@ -11,19 +11,19 @@ const Footer = () => {
 
 const styles = StyleSheet.create({
   footerContainer: {
-    backgroundColor: '#FFB6C1', // Pink color
+    backgroundColor: '#FFB6C1', 
     padding: 15,
     alignItems: 'center',
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
     marginTop: 20,
-    elevation: 3, // Add shadow for a subtle lift
+    elevation: 3, 
   },
   footerText: {
-    color: 'white', // White text color for contrast
+    color: 'white', 
     fontSize: 18,
     fontWeight: 'bold',
-    fontStyle: 'italic', // Italicize the text
+    fontStyle: 'italic',
   },
 });
 

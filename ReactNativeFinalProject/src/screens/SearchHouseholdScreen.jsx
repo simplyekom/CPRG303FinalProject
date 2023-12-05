@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { StyleSheet, View, Text } from 'react-native';
 import MainLayout from '../layouts/MainLayout';
-import SearchHouseholds from '../components/SearchHouseholds'; // Import the SearchHouseholds component
+import SearchHouseholds from '../components/SearchHouseholds'; 
 
 const getDate = () => {
   const today = new Date();
@@ -15,7 +15,7 @@ const getDate = () => {
 const SearchHouseholdScreen = () => {
   const [currentDate, setCurrentDate] = useState(getDate());
 
-  // Sample data for households
+  
   
   const households = [
     { name: 'MelodysHome'},
@@ -26,7 +26,7 @@ const SearchHouseholdScreen = () => {
     { name: 'EllasHome'},
     { name: 'DereksHome'},
     { name: 'YunjiiHome'},
-    // Add more households as needed
+   
   ];
 
   return (

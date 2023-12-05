@@ -6,7 +6,7 @@ import Footer from './Footer';
 const MainLayout = ({ children }) => {
   return (
     <ImageBackground
-      source={require('../images/pinkbackground.jpeg')} // Replace with the correct path
+      source={require('../images/pinkbackground.jpeg')} 
       style={styles.container}
     >
       <Header />
@@ -19,7 +19,7 @@ const MainLayout = ({ children }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    resizeMode: 'cover', // or 'stretch' for different image resizing options
+    resizeMode: 'cover',
     padding: 0,
   },
 });

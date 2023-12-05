@@ -8,7 +8,7 @@ const Header = () => {
         <Image
           source={require('../images/btlogo.png')}
           style={styles.logo}
-          resizeMode="contain" // Adjust the resizeMode as needed
+          resizeMode="contain" 
         />
       </View>
       <Text style={styles.headerText}> Better Together </Text>
@@ -24,10 +24,10 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 30,
     borderBottomRightRadius: 30,
     elevation: 3,
-    flexDirection: 'row', // Use flexDirection to arrange items horizontally
+    flexDirection: 'row', 
   },
   logoContainer: {
-    marginRight: 0, // Adjust spacing between logo and text
+    marginRight: 0, 
   },
   logo: {
     marginLeft:20,

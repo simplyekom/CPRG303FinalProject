@@ -70,15 +70,15 @@ const styles = StyleSheet.create({
   household: {
     padding: 10,
     borderBottomWidth: 2,
-    borderColor: 'white', // Pink color
+    borderColor: 'white', 
     marginLeft: 10,
     marginRight: 10,
     marginTop: 12,
-    backgroundColor: '#FED7E2', // Light pink background
-    borderRadius: 8, // Rounded corners
+    backgroundColor: '#FED7E2', 
+    borderRadius: 8, 
   },
   selectedHousehold: {
-    backgroundColor: '#FF69B4', // A different color for the selected household
+    backgroundColor: '#FF69B4', 
   },
   householdName: {
     fontSize: 17,
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     marginBottom: 10,
-    color: 'black', // Black font color
+    color: 'black', 
   },
 });
 
