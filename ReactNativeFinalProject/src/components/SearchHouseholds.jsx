@@ -1,26 +1,43 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, Text, ScrollView, Pressable, FlatList } from 'react-native';
+import { StyleSheet, View, Text, ScrollView, Pressable, FlatList, TextInput } from 'react-native';
 
 const SearchHouseholds = ({ households }) => {
   const [selectedHousehold, setSelectedHousehold] = useState(null);
+  const [searchQuery, setSearchQuery] = useState('');
 
   const handlePress = (household) => {
     // Handle press action, for example, navigate to household details screen
     setSelectedHousehold(household);
   };
 
+  const filteredHouseholds = households.filter((household) =>
+    household.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Search for Existing Households</Text>
 
+      {/* Add TextInput for search */}
+      <TextInput
+        style={styles.searchInput}
+        placeholder="Search by household name"
+        onChangeText={(text) => setSearchQuery(text)}
+        value={searchQuery}
+      />
+
+      {/* Add label for proximity */}
+      <Text style={styles.proximityLabel}>Household Names Within Close Proximity:</Text>
+
+
       <FlatList
-        data={households}
+        data={filteredHouseholds}
         keyExtractor={(item, index) => index.toString()}
         renderItem={({ item }) => (
+          
           <Pressable onPress={() => handlePress(item)}>
             <View style={[styles.household, selectedHousehold === item && styles.selectedHousehold]}>
               <Text style={styles.householdName}>{item.name}</Text>
-              <Text style={styles.householdDetails}>{`${item.numberOfPeople} people | $${item.rentPrice}`}</Text>
             </View>
           </Pressable>
         )}
@@ -38,30 +55,41 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: 'bold',
-    marginBottom: 20,
+    marginBottom: 25,
+    marginTop: 20,
+    color: 'black'
+  },
+  searchInput: {
+    height: 40,
+    borderColor: 'black',
+    borderWidth: 1,
+    marginBottom: 25,
+    paddingLeft: 10,
+    width: '80%',
   },
   household: {
     padding: 10,
-    borderBottomWidth: 1,
-    borderColor: '#FFC0CB', // Pink color
+    borderBottomWidth: 2,
+    borderColor: 'white', // Pink color
     marginLeft: 10,
     marginRight: 10,
-    marginTop: 5,
+    marginTop: 12,
     backgroundColor: '#FED7E2', // Light pink background
     borderRadius: 8, // Rounded corners
   },
   selectedHousehold: {
-    backgroundColor: '#FF69B4', // A different color for selected household
+    backgroundColor: '#FF69B4', // A different color for the selected household
   },
   householdName: {
-    fontSize: 16,
+    fontSize: 17,
     fontWeight: 'bold',
   },
-  householdDetails: {
-    fontSize: 14,
-    color: 'white',
+  proximityLabel: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    marginBottom: 10,
+    color: 'black', // Black font color
   },
 });
 
 export default SearchHouseholds;
-

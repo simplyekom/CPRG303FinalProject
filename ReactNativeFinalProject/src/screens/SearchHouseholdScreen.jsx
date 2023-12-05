@@ -16,18 +16,29 @@ const SearchHouseholdScreen = () => {
   const [currentDate, setCurrentDate] = useState(getDate());
 
   // Sample data for households
+  
   const households = [
-    { name: 'Household 1', numberOfPeople: 3, rentPrice: 1200 },
-    { name: 'Household 2', numberOfPeople: 2, rentPrice: 1000 },
+    { name: 'MelodysHome'},
+    { name: 'SuperAwesomeHome'},
+    { name: 'KadensHome'},
+    { name: 'HeathersHome'},
+    { name: 'BestestHome'},
+    { name: 'EllasHome'},
+    { name: 'DereksHome'},
+    { name: 'YunjiiHome'},
     // Add more households as needed
   ];
 
   return (
     <MainLayout>
       <SafeAreaView style={styles.safeArea}>
+
+        
         
         {/* Display the SearchHouseholds component */}
         <SearchHouseholds households={households} />
+
+        
 
       </SafeAreaView>
     </MainLayout>

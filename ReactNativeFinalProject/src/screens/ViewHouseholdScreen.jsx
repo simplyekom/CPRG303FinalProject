@@ -21,14 +21,14 @@ const ViewHouseholdScreen = () => {
         {/* Members' Names Section */}
         <View style={styles.categoryContainer}>
           <Text style={styles.categoryHeader}>Members Names</Text>
-          {<Text> Jane Smith                Chanel Briggs</Text>}
+          <Text style={styles.text}>Jane Smith                Chanel Briggs</Text>
         </View>
 
         {/* Chores List Section */}
         <View style={styles.categoryContainer}>
           <Text style={styles.categoryHeader}>Chores List</Text>
-          {<Text> Clean the kitchen     Vacuum the living room </Text>}
-          {<Text> Clean the bathroom     Dust the furnitures </Text>}
+          <Text style={styles.text}>Clean the kitchen     Vacuum the living room</Text>
+          <Text style={styles.text}>Clean the bathroom     Dust the furnitures</Text>
         </View>
 
         {/* Grocery List and Notes Sections (Side by Side) */}
@@ -36,25 +36,24 @@ const ViewHouseholdScreen = () => {
           {/* Grocery List Section */}
           <View style={styles.verticalCategoryContainer}>
             <Text style={styles.categoryHeader}>Grocery List</Text>
-            {<Text> Banana</Text>}
-            {<Text> Eggs</Text>}
-            {<Text> Bacon</Text>}
-            {<Text> Rice</Text>}
-            {<Text> Bread</Text>}
-            {<Text> Kimchi</Text>}
-            {<Text> Chicken</Text>}
-            {<Text> Beef</Text>}
-            {<Text> IceCream</Text>}
-            {<Text> Dumplings</Text>}
+            <Text style={styles.text}>Banana</Text>
+            <Text style={styles.text}>Eggs</Text>
+            <Text style={styles.text}>Bacon</Text>
+            <Text style={styles.text}>Rice</Text>
+            <Text style={styles.text}>Bread</Text>
+            <Text style={styles.text}>Kimchi</Text>
+            <Text style={styles.text}>Chicken</Text>
+            <Text style={styles.text}>Beef</Text>
+            <Text style={styles.text}>IceCream</Text>
+            <Text style={styles.text}>Dumplings</Text>
           </View>
 
           {/* Notes Section */}
           <View style={styles.verticalCategoryContainer}>
             <Text style={styles.categoryHeader}>Notes</Text>
-            {<Text> - Remember to pay rent on the first</Text>}
-            {<Text> </Text>}
-            {<Text> -Milk is expiring in 3 days</Text>}
-            
+            <Text style={styles.text}>- Remember to pay rent on the first</Text>
+            <Text style={styles.text}></Text>
+            <Text style={styles.text}>- Milk is expiring in 3 days</Text>
           </View>
         </View>
 
@@ -95,6 +94,10 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     elevation: 3, // Add shadow for a subtle lift
     marginBottom: 20,
+  },
+  text: {
+    color: 'black',
+    fontSize: 16,
   },
 });
 
