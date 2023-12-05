@@ -21,13 +21,14 @@ const ViewHouseholdScreen = () => {
         {/* Members' Names Section */}
         <View style={styles.categoryContainer}>
           <Text style={styles.categoryHeader}>Members Names</Text>
-          {/* Add your content for Members' Names here */}
+          {<Text> Jane Smith                Chanel Briggs</Text>}
         </View>
 
         {/* Chores List Section */}
         <View style={styles.categoryContainer}>
           <Text style={styles.categoryHeader}>Chores List</Text>
-          {/* Add your content for Chores List here */}
+          {<Text> Clean the kitchen     Vacuum the living room </Text>}
+          {<Text> Clean the bathroom     Dust the furnitures </Text>}
         </View>
 
         {/* Grocery List and Notes Sections (Side by Side) */}
@@ -35,13 +36,25 @@ const ViewHouseholdScreen = () => {
           {/* Grocery List Section */}
           <View style={styles.verticalCategoryContainer}>
             <Text style={styles.categoryHeader}>Grocery List</Text>
-            {/* Add your content for Grocery List here */}
+            {<Text> Banana</Text>}
+            {<Text> Eggs</Text>}
+            {<Text> Bacon</Text>}
+            {<Text> Rice</Text>}
+            {<Text> Bread</Text>}
+            {<Text> Kimchi</Text>}
+            {<Text> Chicken</Text>}
+            {<Text> Beef</Text>}
+            {<Text> IceCream</Text>}
+            {<Text> Dumplings</Text>}
           </View>
 
           {/* Notes Section */}
           <View style={styles.verticalCategoryContainer}>
             <Text style={styles.categoryHeader}>Notes</Text>
-            {/* Add your content for Notes here */}
+            {<Text> - Remember to pay rent on the first</Text>}
+            {<Text> </Text>}
+            {<Text> -Milk is expiring in 3 days</Text>}
+            
           </View>
         </View>
 
